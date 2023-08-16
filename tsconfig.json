@@ -1,0 +1,26 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "#/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register",
+      "dotenv/config"
+    ]
+  },
+}
