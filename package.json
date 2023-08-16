@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon --watch src --ext ts --exec \"ts-node src\"",
     "eslint": "eslint . --fix",
     "lint": "gts lint",
     "clean": "gts clean",
@@ -41,6 +42,7 @@
     "jest-environment-node": "29.6.2",
     "lefthook": "1.4.9",
     "lint-staged": "14.0.0",
+    "nodemon": "3.0.1",
     "rimraf": "5.0.1",
     "supertest": "6.3.3",
     "ts-jest": "29.1.1",
