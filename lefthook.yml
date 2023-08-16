@@ -43,3 +43,6 @@ pre-commit:
   commands:
     lint-staged:
       run: npx lint-staged
+    jest-tests:  # Adding Jest tests for JavaScript
+      tags: frontend tests
+      run: npm run test
