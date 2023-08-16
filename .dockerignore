@@ -5,3 +5,8 @@ Dockerfile
 .gitignore
 build
 README.md
+
+.husky
+.tmp
+.vscode
+node_modules
