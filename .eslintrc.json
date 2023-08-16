@@ -1,3 +1,25 @@
 {
-  "extends": "./node_modules/gts/"
+  "extends": "./node_modules/gts/",
+  "rules": {
+    // @typescript-eslint
+    "@typescript-eslint/no-namespace": "off",
+    // import
+    "import/no-duplicates": "off",
+    // prettier/prettier
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "node": {
+      "allowModules": [
+      ]
+    }
+  }
 }
