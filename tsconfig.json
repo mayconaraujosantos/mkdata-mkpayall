@@ -2,25 +2,22 @@
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "rootDir": ".",
+    "outDir": "build",
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "noImplicitReturns": false,
+    "types": ["@jest/types"],
     "baseUrl": "./",
     "paths": {
-      "#/*": [
-        "./src/*"
-      ]
-    },
+      "*": ["./node_modules/*", "./src/types/*"],
+      "#/*": ["./src/*"]
+    }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.d.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "exclude": ["node_modules", "build", "docs", "**/*.test.ts"],
   "ts-node": {
-    "require": [
-      "tsconfig-paths/register",
-      "dotenv/config"
-    ]
-  },
+    "require": ["tsconfig-paths/register", "dotenv/config"]
+  }
 }
