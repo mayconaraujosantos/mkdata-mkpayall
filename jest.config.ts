@@ -2,7 +2,7 @@ import {Config} from '@jest/types';
 
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
-  roots: ['<rootDir>/src', '<rootDir>/mocks', '<rootDir>/tests'],
+  roots: ['<rootDir>/src', '<rootDir>/tests'],
   setupFiles: ['<rootDir>/tests/setup.ts'],
   coverageDirectory: '.tmp/coverage',
   collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!<rootDir>/src/**/index.ts'],
